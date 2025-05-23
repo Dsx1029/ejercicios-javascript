@@ -10,6 +10,16 @@ Escribir una función llamada `contrasenaValida` que reciba un string y retorne 
 
 ```javascript
 // escribe tu respuesta acá
+function contrasenaValida(str) {
+  const contrasena1 = "2Fj(jjbFsuj";
+  const contrasena2 = "eoZiugBf&g9";
+
+  if (str === contrasena1 || str === contrasena2) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // código de prueba
 console.log(contrasenaValida("2Fj(jjbFsuj")) // true
@@ -24,7 +34,17 @@ Escribir una función llamada `calcularImpuestos` que reciba dos argumentos num�
 
 ```javascript
 // escribe tu respuesta acá
-
+function calcularImpuestos (edad, ingresos){
+    const pagos = ingresos * 0.4;
+    if (edad >= 18 && ingresos >= 1000){
+        return pagos;
+    
+        else (){
+            return 0;
+        }
+    
+    }
+}
 // código de prueba
 console.log(calcularImpuestos(18, 1000)) // 400
 console.log(calcularImpuestos(40, 10000)) // 4000
