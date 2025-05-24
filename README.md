@@ -10,6 +10,16 @@ Escribir una función llamada `contrasenaValida` que reciba un string y retorne 
 
 ```javascript
 // escribe tu respuesta acá
+function contrasenaValida(str) {
+  const contrasena1 = "2Fj(jjbFsuj";
+  const contrasena2 = "eoZiugBf&g9";
+
+  if (str === contrasena1 || str === contrasena2) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // código de prueba
 console.log(contrasenaValida("2Fj(jjbFsuj")) // true
@@ -24,7 +34,17 @@ Escribir una función llamada `calcularImpuestos` que reciba dos argumentos num�
 
 ```javascript
 // escribe tu respuesta acá
-
+function calcularImpuestos (edad, ingresos){
+    const pagos = ingresos * 0.4;
+    if (edad >= 18 && ingresos >= 1000){
+        return pagos;
+    
+        else (){
+            return 0;
+        }
+    
+    }
+}
 // código de prueba
 console.log(calcularImpuestos(18, 1000)) // 400
 console.log(calcularImpuestos(40, 10000)) // 4000
@@ -47,7 +67,21 @@ Escribir una función llamada `bmi` que reciba dos argumentos: peso y altura, y 
 
 ```javascript
 // escribe la función bmi acá
+function bmi ( peso,altura) {
+   const bmi = peso / Math.pow(altura, 2);
+if (bmi < 18.5) {
+    return "bajo peso";}
+ 
+ else if (bmi >= 18.5 && bmi <= 24.9){
+    return "normal";}
 
+ else if (bmi >= 25 && bmi <= 29.9){
+ return "sobre peso";}
+ 
+ else if (bmi >= 30){
+    return "obeso"}
+
+}
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
 console.log(bmi(72, 1.6)) // "Sobrepeso"
